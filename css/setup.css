@@ -89,3 +89,19 @@ a{
 }
 
 /* *********************CSS Reset END********************* */
+
+section{
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1200px;
+  min-width: 900px;
+  margin: auto;
+}
+
+.big_font{
+  font-size: 3rem;
+  text-shadow: 0 0 10px #434343;
+}
