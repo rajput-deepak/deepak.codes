@@ -42,7 +42,6 @@ body{
 
 body{
   line-height: 1.5;
-  background: #f5f5f5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -97,11 +96,16 @@ section{
 
 .container{
   max-width: 1200px;
-  min-width: 900px;
   margin: auto;
 }
 
 .big_font{
-  font-size: 3rem;
-  text-shadow: 0 0 10px #434343;
+  font-size: 2.5rem;
+  color: #272727;
+  text-shadow: 0 0 5px #f5f5f5;
+}
+@media screen and (max-width: 720px) {
+  .container{
+    width: 100%;
+  }
 }
