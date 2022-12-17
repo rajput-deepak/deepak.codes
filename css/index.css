@@ -37,8 +37,8 @@ body{
 /* toggle */
 .toggle{
   content: "";
-  height: 3rem;
-  width: 3rem;
+  height: 2.7rem;
+  width: 2.7rem;
   background: var(--dark_blue);
   border-radius: 10px;
   display: flex;
@@ -46,14 +46,32 @@ body{
   gap: 5px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  display: none;
 }
 
 .toggle span{
   content: "";
-  width: 2rem;
-  height: 6px;
+  width: 1.7rem;
+  height: 5px;
   background: var(--cream);
-  border-radius: 3px;
+  border-radius: 2.5px;
+  transition: width 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-border-radius: 2.5px;
+  -moz-border-radius: 2.5px;
+  -ms-border-radius: 2.5px;
+  -o-border-radius: 2.5px;
+}
+
+.toggle.active span:nth-child(1){
+  width: 1rem;
+}
+.toggle.active span:nth-child(2){
+  width: 1.5rem;
+}
+.toggle.active span:nth-child(3){
+  width: 1.2rem;
 }
 
 /* responsive */
@@ -66,5 +84,9 @@ body{
   .nav_container{
     width: 100%;
     padding: 0 5px;
+  }
+
+  .toggle{
+    display: flex;
   }
 }
