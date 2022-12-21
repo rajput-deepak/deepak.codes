@@ -63,3 +63,22 @@ a:hover, a:active{
   font-size: .9rem;
   text-align: center;
 }
+
+@media screen and (max-width:720px) {
+  .navitems{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    background: black;
+    width: 200px;
+  }
+
+  .navitems > a{
+    width: 100%;
+  }
+}
