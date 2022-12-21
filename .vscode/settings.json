@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "scm.inputFontSize": 13,
+  "editor.fontFamily": "'Cascadia Code',Consolas, 'Courier New', monospace",
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+  
+  },
+  "editor.codeLens": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+}

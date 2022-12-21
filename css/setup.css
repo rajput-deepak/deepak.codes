@@ -1,107 +1,65 @@
-/* google fonts pacifico, font-family: 'Pacifico', cursive;*/
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rubik+Vinyl&display=swap');
 
 
-/* google font montserrat 400, 600, 800, font-family: 'Montserrat', sans-serif;*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
-
-/* ========================================================= */
-
-:root{
-
-  --dark_blue: #05386B;  /*RGB (5, 56, 107)*/
-  --dark_green: #379683;  /*RGB (55, 150, 131)*/
-  --light_green: #5CDB95; 	/*RGB (92, 219, 149)*/
-  --soft_green: #8EE4AF; 	/*RGB (142, 228, 175)*/
-  --cream: #EDF5E1; /*RGB (237, 245, 225)*/
-  
+body{
+  font-family: 'Gloria Hallelujah', cursive;
+  background: #F0EBE3;
 }
 
-/* ******************* CSS Reset ************************* */
-
-*,
-*::before,
-*::after{
-  box-sizing: border-box;
-}
-
-*{
+html,body{
   margin: 0;
+  padding: 0;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
-html,
-body{
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+h1,h2,h3,h4{
+  font-family: 'Rubik Vinyl', cursive;
+  color: brown;
 }
 
-body{
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+p{
+  color: aliceblue;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-input, button, textarea, select{
-  font: inherit;
-}
-
-button{
-  border: none;
-}
-
-input:focus, button:focus, textarea:focus, select:focus{
-  outline: none;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
 a{
   text-decoration: none;
-}
-
-p,span,h1,h2,h3,h4,h5,h6,a{
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#root, #__next {
-  isolation: isolate;
-}
-
-a{
   color: unset;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+a:hover, a:active{
+  color:brown;
 }
 
-/* *********************CSS Reset END********************* */
+.logo{
+  font-family: 'Rubik Vinyl', cursive;
+  font-size: 2rem;
+}
 
-section{
+#navbar{
+  height: 4rem;
+  display: inline-flex;
   width: 100vw;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-  max-width: 1000px;
-  margin: auto;
+.nav_cont{
+  display: inline-flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
 }
 
-@media screen and (max-width: 720px) {
-  .container{
-    width: 100%;
-    padding: 10px;
-  }
+.navitems{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  font-size: .9rem;
+  text-align: center;
 }
